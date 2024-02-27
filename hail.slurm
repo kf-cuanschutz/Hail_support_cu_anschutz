@@ -1,3 +1,5 @@
+#!/bin/bash 
+
 #SBATCH --job-name=hail_demonstration
 #SBATCH --account=amc-general
 #SBATCH --partition=amilan
