@@ -10,6 +10,10 @@
 # $HeadURL$
 # $Revision$
 # $Date$
+
+
+# Original code from: https://lobogit.unm.edu/CARC/tutorials/-/blob/master/spark/pbs-spark-submit
+
 import fcntl
 import getopt
 import glob
