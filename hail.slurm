@@ -7,7 +7,7 @@
 #SBATCH --error=hail_demonstration.err
 #SBATCH --qos=normal
 #SBATCH --time=00:25:00
-#SBATCH --ntasks-per-node=32 # Ideally the same amount of core requested per node for consistency purpose
+#SBATCH --ntasks-per-node=8 # Ideally the same amount of core requested per node for consistency purpose
 #SBATCH --nodes=2
 
 
