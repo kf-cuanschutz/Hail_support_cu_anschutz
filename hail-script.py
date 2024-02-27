@@ -1,7 +1,15 @@
 import hail as hl
+import argparse
 
+# Original code from https://hail.is/docs/0.2/install/other-cluster.html
 
-temp_dir = "/gpfs/alpine1/scratch/kfotso@xsede.org/cache_dir"
+# Getting the tmp dir path
+parser = argparse.ArgumentParser()
+parser.add_argument("--temp_dir", help="To enter a temp directory otherwise it will crash")
+args = parser.parse_args()
+temp_dir = args.temp_dir
+
+#temp_dir = "/gpfs/alpine1/scratch/kfotso@xsede.org/cache_dir"
 
 hl.init(tmp_dir=temp_dir,
         local_tmpdir=temp_dir,
